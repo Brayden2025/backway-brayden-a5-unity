@@ -4,7 +4,7 @@ public class ShipColorChanger : MonoBehaviour
 {   private SpriteRenderer spriteRenderer;
     public Color[] randomcolor = new Color[] { Color.blue, Color.green, Color.yellow, Color.cyan
    , Color.red, Color.magenta};
-    int RandomColor = 0;
+    int RandomColor = 3;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
 

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float thrust = 3;
+    [SerializeField] private float thrust = 8;
     [SerializeField] private float rotationSpeed = 360;
     [SerializeField] private float maxVelocity = 15;
     [SerializeField] private float bulletSpeed = 3;
@@ -15,9 +15,8 @@ public class Player : MonoBehaviour
     // hey test
     private void Update()
     {
-        // Spawn bullet on mouse click
-        int leftClickID = 0;
-        if (Input.GetMouseButtonDown(leftClickID))
+        // Spawn bullet on up arrow being press
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             // Bullet transform information when spawned
             Vector3 pos = transform.position + transform.up;
